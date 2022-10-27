@@ -7,4 +7,8 @@
     <string name="high_temp">High 80°</string>
     <string name="humidity_percent">Humidity 100%</string>
     <string name="pressure_level">Pressure 1023 hPa</string>
+    <string name="forecast">Forecast</string>
+    <string name="degree_temp">%d°</string>
+    <string name="forecast_current_high">High: 80°</string>
+    <string name="forecast_current_low">Low: 60°</string>
 </resources>
