@@ -2,6 +2,7 @@ package com.example.weatherapp
 
 import android.os.Bundle
 import android.view.View
+import androidx.compose.runtime.Composable
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.weatherapp.databinding.FragmentCurrentConditionsBinding
@@ -23,3 +24,8 @@ class CurrentConditionsFragment : Fragment(R.layout.fragment_current_conditions)
 
     }
 }
+@Composable
+fun CurrentConditions() {
+
+}
+
