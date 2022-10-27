@@ -4,6 +4,7 @@ package com.example.weatherapp
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import androidx.compose.runtime.Composable
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavArgs
 import androidx.navigation.fragment.navArgs
@@ -15,23 +16,24 @@ import java.time.format.DateTimeFormatter
 import kotlin.system.measureNanoTime
 
 val forecastData = listOf<Forecast>(
-    Forecast("72"),
-    Forecast("59"),
-    Forecast("63"),
-    Forecast("71"),
-    Forecast("79"),
-    Forecast("82"),
-    Forecast("67"),
-    Forecast("66"),
-    Forecast("62"),
-    Forecast("80"),
-    Forecast("69"),
-    Forecast("76"),
-    Forecast("77"),
-    Forecast("81"),
-    Forecast("68"),
-    Forecast("70"),
+    Forecast( "Temp: 72°"),
+    Forecast( "Temp: 59°"),
+    Forecast( "Temp: 63°"),
+    Forecast( "Temp: 71°"),
+    Forecast( "Temp: 79°"),
+    Forecast( "Temp: 82°"),
+    Forecast( "Temp: 67°"),
+    Forecast( "Temp: 66°"),
+    Forecast( "Temp: 62°"),
+    Forecast( "Temp: 80°"),
+    Forecast( "Temp: 69°"),
+    Forecast( "Temp: 76°"),
+    Forecast( "Temp: 77°"),
+    Forecast( "Temp: 81°"),
+    Forecast( "Temp: 68°"),
+    Forecast( "Temp: 70°"),
 )
+
 
 class ForecastFragment : Fragment(R.layout.fragment_forcast){
 
@@ -56,4 +58,8 @@ class ForecastFragment : Fragment(R.layout.fragment_forcast){
         Log.d("ForecastFragment", formattedDate)
         Log.d("ForecastFragment", formattedTime)
     }
+}
+@Composable
+fun Forecast() {
+
 }
